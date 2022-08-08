@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Music
+  - Crystal
+  - Key1
+  - XRRigOrigin
+  - XRRig
   layers:
   - Default
   - TransparentFX
