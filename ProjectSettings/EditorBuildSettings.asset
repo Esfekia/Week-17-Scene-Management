@@ -4,7 +4,19 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/XR Persistent.unity
+    guid: a613698fe84d10043a8197dceeca50c3
+  - enabled: 1
+    path: Assets/Scenes/Lobby.unity
+    guid: 41fd958d9ce5dd0459b91bc56687ae11
+  - enabled: 1
+    path: Assets/Scenes/Maze.unity
+    guid: 6101b89e66160bf4a92b8cbdb902a32c
+  - enabled: 1
+    path: Assets/Scenes/MoodMatic.unity
+    guid: 2ccc91de915d7ba48b426916a8dcca24
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 906f18299fd6f0c4a86aa654d0e4e5c4, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 408764f431bb9114bb1af43476acc7f5, type: 2}

@@ -36,6 +36,12 @@ public class SceneLoader : Singleton<SceneLoader>
 
         //get the active scene when the script wakes up so that we can reference the persistent scene
         m_persistentScene = SceneManager.GetActiveScene();
+
+        // just to know that something is happening and that we are not in the editor
+        if (!Application.isEditor)
+        {
+            SceneManager.LoadSceneAsync(SceneUtils.Names.Lobby, LoadSceneMode.Additive);
+        }
     }
 
     private void OnDestroy()
