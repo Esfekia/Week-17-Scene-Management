@@ -5,6 +5,15 @@ using UnityEngine.SceneManagement;
 
 public static class SceneUtils
 {
+    // So that we can use these names in our GoToScene.cs
+    public enum SceneId
+    {
+        Lobby,
+        Maze,
+        MoodMatic
+    }
+
+    public static readonly string[] scenes = { Names.Lobby, Names.Maze, Names.MoodMatic };
     public static class Names
     {
         public static readonly string XRPersistent = "XR Persistent";

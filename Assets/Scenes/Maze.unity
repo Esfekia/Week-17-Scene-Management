@@ -27136,6 +27136,7 @@ GameObject:
   - component: {fileID: 2037139538}
   - component: {fileID: 2037139537}
   - component: {fileID: 2037139536}
+  - component: {fileID: 2037139540}
   m_Layer: 0
   m_Name: WinZone - Box 9
   m_TagString: Untagged
@@ -27155,6 +27156,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cba0e8ab6d53b8546aa089b0e875296c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  onWin:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2037139540}
+        m_TargetAssemblyTypeName: GoToScene, Assembly-CSharp
+        m_MethodName: Go
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   winMessage: {fileID: 1414629948}
 --- !u!65 &2037139537
 BoxCollider:
@@ -27192,6 +27208,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2037139540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2037139535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4cfbb3c7c846904ba1a913f35576d72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextScene: 0
 --- !u!1001 &2039864595
 PrefabInstance:
   m_ObjectHideFlags: 0
