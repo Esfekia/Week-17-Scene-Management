@@ -181,5 +181,31 @@ public class Hand : MonoBehaviour
             }
         }
     }
+
+    public void InteractionCleanup()
+    {
+        XRDirectInteractor directInteractior = interactor as XRDirectInteractor;
+        if (directInteractior != null)
+        {
+            List<XRBaseInteractable> validTargets = new List<XRBaseInteractable>();
+            interactor.GetValidTargets(validTargets);
+
+            //tell the interaction manager that we want to clear this selection from happening 
+            interactor.interactionManager.ClearInteractorSelection(interactor);
+
+            // make sure nothing is happening if it is hovered
+            interactor.interactionManager.ClearInteractorHover(interactor, validTargets);
+
+            foreach (var target in validTargets)
+            {
+                if (target.gameObject.scene != interactor.gameObject.scene)
+                {
+                    // make sure this object will trigger an OnTriggerExit
+                    // best way to do that is moving the object out of the scene, really far away.
+                    target.transform.position = new Vector3(100, 100, 100);
+                }
+            }
+        }
+    }
     
 }

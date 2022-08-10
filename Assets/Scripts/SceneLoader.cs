@@ -14,6 +14,7 @@ public class SceneLoader : Singleton<SceneLoader>
     public float addedWaitTime = 2.0f;
    
     public UnityEvent onLoadStart = new UnityEvent();
+    public UnityEvent onBeforeUnload = new UnityEvent();
     public UnityEvent onLoadFinish = new UnityEvent();
 
     bool m_isLoading = false;
@@ -75,6 +76,10 @@ public class SceneLoader : Singleton<SceneLoader>
         //We will use the ? syntax to optionally load, in case nobody is plugged into it, to avoid an error
         onLoadStart?.Invoke();
         yield return FadeOut();
+
+        onBeforeUnload?.Invoke();
+        // just in case, wait for the next frame to come around, to be able to clean up before next frame
+        yield return new WaitForSeconds(0);
         yield return StartCoroutine(UnloadCurrentScene());
 
         // to ensure the fade in out is not instantaneous

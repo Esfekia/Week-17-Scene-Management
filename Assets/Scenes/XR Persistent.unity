@@ -1323,6 +1323,33 @@ MonoBehaviour:
   onLoadStart:
     m_PersistentCalls:
       m_Calls: []
+  onBeforeUnload:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 988139349}
+        m_TargetAssemblyTypeName: Hand, Assembly-CSharp
+        m_MethodName: InteractionCleanup
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1498403398}
+        m_TargetAssemblyTypeName: Hand, Assembly-CSharp
+        m_MethodName: InteractionCleanup
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onLoadFinish:
     m_PersistentCalls:
       m_Calls: []
@@ -1407,6 +1434,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7910206821871298366, guid: 00d3095b07886fc4291ee6c73d1c3c18, type: 3}
   m_PrefabInstance: {fileID: 988139347}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &988139349 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7910206822685881395, guid: 00d3095b07886fc4291ee6c73d1c3c18, type: 3}
+  m_PrefabInstance: {fileID: 988139347}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a177a988fd632c4297c870dc1643329, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1362785617
 GameObject:
   m_ObjectHideFlags: 0
@@ -1449,7 +1487,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1362785617}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 1.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1523,6 +1561,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1657069114289557823, guid: ef96cd40135c08b46807dc9c4908524e, type: 3}
   m_PrefabInstance: {fileID: 1498403396}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1498403398 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1657069114206887847, guid: ef96cd40135c08b46807dc9c4908524e, type: 3}
+  m_PrefabInstance: {fileID: 1498403396}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a177a988fd632c4297c870dc1643329, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1603621133
 GameObject:
   m_ObjectHideFlags: 0
