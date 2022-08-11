@@ -1,0 +1,16 @@
+{
+    "name": "com.amlovey.aplus2",
+    "version": "1.0.3",
+    "displayName": "A+ Assets Explorer 2",
+    "description": "",
+    "unity": "2019.3",
+    "keywords": [
+        "Assets Explorer",
+        "Project Cleaning Tools"
+    ],
+    "author": {
+        "name": "Amlovey",
+        "email": "amlovey@qq.com",
+        "url": "https://www.amlovey.com"
+    }
+}

@@ -1,0 +1,159 @@
+/*  
+* Copyright (c) 2020-present amlovey
+*/  
+
+/* <!--A+2:f35a31cb-3004-4fae-b06e-206792d95837--> */
+
+.ap-table-header,
+.ap-table-header Label,
+.ap-link {
+    cursor: link;
+}
+
+.Personal .ap-hoverable:hover {
+    background-color: #d0d0d0;
+}
+
+.ap-icon {
+    -unity-font: url("./fontawesome.ttf");
+}
+
+.ap-icon-button {
+    -unity-font: url("./fontawesome.ttf");
+    font-size: 14px;
+    padding: 5px 3px;
+    border-radius: 2px;
+    width: 38px;
+    height: 25px;
+}
+
+.Personal .ap-icon-button {
+    background-color: #e0e0e0;
+    color: #202020;
+}
+
+.ap-text-button {
+    font-size: 14px;
+    padding: 5px;
+    background-color: #e0e0e0;
+    border-radius: 2px;
+    height: 25px;
+    color: #202020;
+}
+
+.Personal .ap-text-button {
+    background-color: #e0e0e0;
+    color: #202020;
+}
+
+.Personal .ap-table-row:hover,
+.Personal .ap-table-row.ap-table-row_odd:hover {
+    background-color: #a0a0a0;
+}
+
+.Personal .ap-table-row:active,
+.Personal .ap-table-row:selected,
+.Personal .ap-table-row.ap-table-row_odd:active,
+.Personal .ap-table-row.ap-table-row_odd:selected,
+.Personal .ap-table-row.row-unused:active,
+.Personal .ap-table-row.row-unused:selected {
+    background-color: #4C7ED8;
+}
+
+.Personal .ap-table-row.row-unused:selected Label,
+.Personal .ap-table-row:selected Label {
+    color: #fefefe;
+}
+
+.Personal .ap-table-row {
+    background-color: #dedede;
+}
+
+.Personal .ap-table-row.ap-table-row_odd {
+    background-color: #cfcfcf;
+}
+
+.Personal .ap-table-row.row-unused Label {
+    color: #6f6f6f;
+}
+
+.Personal .ap-navi-menuitem:hover {
+    background-color: #a0a0a0;
+}
+
+.ap-navi-menuitem:active Label,
+.ap-navi-menuitem.selected Label,
+.ap-navi-menuitem:selected Label{
+    color: #f0f0f0;
+}
+
+.Personal .ap-navi-menuitem:active,
+.Personal .ap-navi-menuitem.selected,
+.Personal .ap-navi-menuitem:selected {
+    background-color: #4C7ED8;
+}
+
+.ap-search-input TextInput {
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-bottom: 0px;
+    -unity-overflow-clip-box: content-box;
+}
+
+/* Professional */
+
+.Professional .ap-icon-button {
+    background-color: #4f4f4f;
+    color: #bfbfbf;
+}
+
+.Professional .ap-text-button {
+    background-color: #4f4f4f;
+    color: #bfbfbf;
+}
+
+.Professional .ap-hoverable:hover {
+    background-color: #515151;
+}
+
+.Professional .ap-navi-menuitem:hover {
+    background-color: #515151;
+}
+
+.Professional .ap-table-row:hover,
+.Professional .ap-table-row.ap-table-row_odd:hover {
+    background-color: #515151;
+}
+
+.Professional .ap-table-row {
+    background-color: #454545;
+}
+
+.Professional .ap-table-row.ap-table-row_odd {
+    background-color: #3e3e3e;
+}
+
+.Professional .ap-table-row:active,
+.Professional .ap-table-row:selected,
+.Professional .ap-table-row.ap-table-row_odd:active,
+.Professional .ap-table-row.ap-table-row_odd:selected,
+.Professional .ap-table-row.row-unused:active,
+.Professional .ap-table-row.row-unused:selected {
+    background-color: #3d7abf;
+    color: #fefefe;
+}
+
+.Professional .ap-table-row.row-unused:selected Label,
+.Professional .ap-table-row:selected Label {
+    color: #fefefe;
+}
+
+.Professional .ap-table-row.row-unused Label {
+    color: #8f8f8f;
+}
+
+.Professional .ap-navi-menuitem:active,
+.Professional .ap-navi-menuitem.selected,
+.Professional .ap-navi-menuitem:selected {
+    background-color: #3d7abf;
+}
